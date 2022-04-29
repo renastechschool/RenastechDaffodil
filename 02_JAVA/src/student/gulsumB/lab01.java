@@ -1,7 +1,6 @@
-package student.Ulzana;
+package student.gulsumB;
 
 public class lab01 {
-
     public static void main(String[] args) {
 
         System.out.println(reverseString("Java"));
@@ -20,3 +19,4 @@ public class lab01 {
         return result;
     }
 }
+
