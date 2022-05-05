@@ -23,5 +23,6 @@ public class AnimalObject {
         fox1.color="Brown";
 //        fox1.fly()
         fox1.smileFox();
+        fox1.eat("chichken");
     }
 }

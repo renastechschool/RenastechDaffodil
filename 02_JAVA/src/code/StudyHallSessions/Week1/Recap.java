@@ -1,6 +1,8 @@
 package code.StudyHallSessions.Week1;
 
-public class Recap {
+import code.StudyHallSessions.Week10.Session1;
+
+public class Recap extends Session1 {
 
     public static void main(String[] args) {
 
@@ -54,6 +56,12 @@ public class Recap {
          // \t
 
         int year=2200;
+
+        System.out.println("****************");
+
+        int [] arr2={1,3,5,7};
+        System.out.println(Session1.sumOFOddNumbers(arr2));
+
 
 
     }
