@@ -1,4 +1,4 @@
 package code.day29_Inheritence_Owerrting;
 
-public class test {
+public class c5test {
 }

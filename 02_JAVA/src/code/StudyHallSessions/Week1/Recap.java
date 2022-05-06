@@ -1,6 +1,6 @@
 package code.StudyHallSessions.Week1;
 
-import code.StudyHallSessions.Week10.Session1;
+import code.StudyHallSessions.Week10.Session1.Session1;
 
 public class Recap extends Session1 {
 

@@ -1,6 +1,5 @@
-package code.StudyHallSessions.Week10;
+package code.StudyHallSessions.Week10.Session1;
 
-import org.omg.PortableInterceptor.INACTIVE;
 
 import java.util.ArrayList;
 

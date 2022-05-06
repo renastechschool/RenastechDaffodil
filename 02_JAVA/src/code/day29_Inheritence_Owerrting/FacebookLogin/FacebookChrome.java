@@ -6,4 +6,9 @@ public class FacebookChrome extends FacebookLogin {
     //username,password
     //getters /seetters method
     //openbrowser,gotourl,closebrowser,passcredantials
+
+    @Override
+    public void openBrowser(){
+        System.out.println("Chrome browser is started");
+    }
 }
