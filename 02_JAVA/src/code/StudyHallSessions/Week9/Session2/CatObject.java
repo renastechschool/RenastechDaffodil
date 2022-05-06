@@ -1,6 +1,6 @@
 package code.StudyHallSessions.Week9.Session2;
 
-import code.StudyHallSessions.Week10.Session1;
+import code.StudyHallSessions.Week10.Session1.Session1;
 
 import java.util.Arrays;
 

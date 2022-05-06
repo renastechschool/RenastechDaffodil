@@ -1,4 +1,4 @@
-package code.StudyHallSessions.Week10;
+package code.StudyHallSessions.Week10.Session1;
 
 public class EmployeeObject extends Employee{
     public static void main(String[] args) {
