@@ -68,7 +68,7 @@ public class c4_arraylistmethods {
         for (int each : num2){
             System.out.println(each);
         }
-
+        System.out.println("***********************");
         //isEmpty
         num2.clear();
         System.out.println(num2.isEmpty());

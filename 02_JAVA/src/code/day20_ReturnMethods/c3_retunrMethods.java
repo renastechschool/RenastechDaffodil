@@ -23,7 +23,7 @@ public class c3_retunrMethods {
 
     //  create a logic that will check given names are equal
     // 2 string to compare 2 parameter
-    //to be able to ccompare equal
+    //to be able to compare equal
     //return type is boolean
     public static boolean equalNames(String str1 , String str2){
 

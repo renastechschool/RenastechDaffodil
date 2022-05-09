@@ -6,7 +6,7 @@ public class lab17 {
 
     public static void main(String[] args) {
 
-        int[] numbersArray = {1, 0, 2, 0, 3, 0, 4, 0};
+        int[] numbersArray = {0, 0, 2, 0, 3, 0, 4, 0};
         System.out.println(Arrays.toString(zeroAtEnd(numbersArray)));
     }
 
