@@ -30,9 +30,9 @@ public class c1_ShoeObjects {
         shoe2.setShoeInfo("converse",11,"black");
 
         Shoe [] shoes = {shoe1,shoe2};
-        System.out.println(Arrays.toString(shoes));
+        System.out.println(Arrays.toString(shoes)+"----");
 
-//        shoes[0].wear();
+          shoes[0].wear();
 
         GenericUtils.Stars();
 

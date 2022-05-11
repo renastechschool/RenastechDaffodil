@@ -14,8 +14,6 @@ public class lab09 {
     public static int[] Sort(int[] a)
     {
         boolean isSorted= false;
-
-
         while (!isSorted)
         {
             isSorted=true;
