@@ -1,4 +1,4 @@
-package code.day29_Inheritence_Owerrting;
+package code.day26_StaticBloc_Constructor.day29_Inheritence_Owerrting;
 
 class test3{
     int number=25;

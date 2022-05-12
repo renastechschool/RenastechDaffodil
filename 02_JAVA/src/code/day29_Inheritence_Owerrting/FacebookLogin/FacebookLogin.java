@@ -1,4 +1,4 @@
-package code.day29_Inheritence_Owerrting.FacebookLogin;
+package code.day26_StaticBloc_Constructor.day29_Inheritence_Owerrting.FacebookLogin;
 
 public class FacebookLogin {
     //try this with chrome , firefox , opera ,safari , edge

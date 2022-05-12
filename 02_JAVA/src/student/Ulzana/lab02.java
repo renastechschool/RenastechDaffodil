@@ -1,4 +1,4 @@
-package student.Ulzana;
+package student.sezar.Ulzana;
 
 import java.util.Arrays;
 
