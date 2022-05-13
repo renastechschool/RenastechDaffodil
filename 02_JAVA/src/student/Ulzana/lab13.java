@@ -17,11 +17,11 @@ public class lab13 {
 
         for (int i = 0; i < word.length(); i++) {
             int count1=0;
-                for (int j = 0; j < word.length(); j++) {
-                   if (word.charAt(i) == word.charAt(j))   {  count1++;   } }
+            for (int j = 0; j < word.length(); j++) {
+                if (word.charAt(i) == word.charAt(j))   {  count1++;   } }
 
-        if (! (result1.contains(""+word.charAt(i))))
-             { result1 +=word.charAt(i)+" - "+ count1+"\n";  }  }
+            if (! (result1.contains(""+word.charAt(i))))
+            { result1 +=word.charAt(i)+" - "+ count1+"\n";  }  }
 
         return  result1; }
 
