@@ -35,3 +35,8 @@ public abstract class Shape {
 
 
 }
+
+//to steps to achive abstraction by using abstract class
+//create an abstract class and abstract method (to be able to hide implemantation of methods )
+//then extend this class to child classes (this is called inheritence)
+//override the abstract methods
