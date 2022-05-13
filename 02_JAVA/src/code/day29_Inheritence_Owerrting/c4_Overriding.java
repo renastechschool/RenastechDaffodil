@@ -1,4 +1,4 @@
-package code.day26_StaticBloc_Constructor.day29_Inheritence_Owerrting;
+package code.day29_Inheritence_Owerrting;
 //    //method overriding: same method name, same parameter, same return-type  (MUST)
 ////				   MUST happen in the sub class
 ////				   access modifer MUST be same or more visible

@@ -1,4 +1,4 @@
-package student.sezar.Ulzana;
+package student.Ulzana;
 
 public class lab01 {
 

@@ -1,4 +1,4 @@
-package code.day26_StaticBloc_Constructor.day29_Inheritence_Owerrting;
+package code.day29_Inheritence_Owerrting;
 
 public class c2_ConstructorSuper extends test2 {
 
