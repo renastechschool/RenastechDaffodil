@@ -12,7 +12,7 @@ public class lab25 {
 
         ArrayList<Integer>number=new ArrayList<>();
 
-        number.addAll(Arrays.asList(10,20,30,40,50,60,70,80));
+        number.addAll(Arrays.asList(10,5,30,64,50,60,70,80));
         for (int i = 0; i <number.size() ; i++) {
             for (int j = number.size()-1;  j>i ; j--) {
                 if (number.get(i) > number.get(j)){

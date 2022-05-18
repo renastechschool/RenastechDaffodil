@@ -1,6 +1,8 @@
 package code.day31_Abstraction;
 
 public class c7_InterfaceCalls  implements c6_InterfaceIntroduction{
+
+
     @Override
     public void method3() {
 

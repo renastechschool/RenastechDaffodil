@@ -2,7 +2,7 @@ package code.day16_Arrays;
 
 import java.util.Arrays;
 
-public class c1_array1 {
+public class c1_Arrays1 {
     public static void main(String[] args) {
 
         // find the sum of the numbers from int array
@@ -37,7 +37,7 @@ public class c1_array1 {
         int [] ages=new int[5];
         // lenght is 5
 
-      //  System.out.println(ages[10]); // ArrayIndexOutOfBoundsException
+        //  System.out.println(ages[10]); // ArrayIndexOutOfBoundsException
 
         ages[2]=50; // updated index 2 value
 
@@ -124,3 +124,4 @@ public class c1_array1 {
         System.out.println(Arrays.toString(list3)); // [1, 0, 5, -90, 78, 100, 90]
     }
 }
+
