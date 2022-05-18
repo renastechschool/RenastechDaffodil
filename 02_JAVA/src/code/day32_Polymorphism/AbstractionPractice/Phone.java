@@ -5,8 +5,8 @@ package code.day32_Polymorphism.AbstractionPractice;
 //            abstract methods: calling(), texting()
 //            instance method: toString()
 //
-//create sub classes called iphone and samsung
-//--create a static block to assign brand at begining for iphone and samsung
+//create subclasses called iphone and samsung
+//--create a static block to assign brand at beginning for iphone and samsung
 //--create a constructor to assign model , prize and size for iphone and samsung
 //--override abstract methods from parent Phone class
 

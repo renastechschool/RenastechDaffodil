@@ -1,6 +1,6 @@
 package code.day31_Abstraction;
 
-public class c8_AbstractionPractice implements test1,test2,test3{
+public class c8_AbstractionPractice implements test1,test2,test3 {
     @Override
     public void method1() {
 
@@ -15,6 +15,8 @@ public class c8_AbstractionPractice implements test1,test2,test3{
     public void method3() {
 
     }
+
+
     //it will inherite all the methods from test 1 ,test2 ,test 3
     //below method will be inherited from parent classes
     //met1 ,met2 ,met3
@@ -36,9 +38,12 @@ interface test3{
 
 class test4{
 
+
 }
 
-class test5{
+abstract class test5{
+    abstract void aaa();
+    abstract void bbb();
 
 }
 //

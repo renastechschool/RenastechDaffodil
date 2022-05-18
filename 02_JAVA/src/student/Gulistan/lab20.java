@@ -8,9 +8,9 @@ public class lab20 {
 
    System.out.println(first+" " + second);
 
-   first = first + second;
-   second = first- second;
-   first = first - second;
+   first  = first + second;
+   second = first - second;
+   first  = first - second;
 
    System.out.println(first+" " + second);
 

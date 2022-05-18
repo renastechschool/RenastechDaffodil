@@ -3,13 +3,13 @@ package code.day32_Polymorphism.AbstractionPractice;
 public class Iphone extends Phone implements appleStore{
     //after we extending phone
     //brand,model,price    inherited
-    //texting,calling       inherited   --- abstract methods  (you need owerride )
+    //texting,calling       inherited   --- abstract methods  (you need override )
     //tostring            inherited
 
     //after we implement the applestore
     //storename
     //download
-    //downloadApp method -- abstract (you need owerride )
+    //downloadApp method -- abstract (you need override )
 
     static {
         brand = "-----Apple------";

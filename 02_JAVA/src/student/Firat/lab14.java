@@ -1,3 +1,4 @@
+/*
 package student.Firat;
 
 public class lab14 {
@@ -45,3 +46,4 @@ public class lab14 {
 
 
 }
+*/
