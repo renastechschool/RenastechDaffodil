@@ -31,7 +31,7 @@ public class Lab02 {
         WebDriver driver1 = new ChromeDriver();
         driver1.get("https://www.google.com");
         WebElement searchBox = driver1.findElement(By.name("q"));
-        searchBox.sendKeys("existentialcrisis");
+        searchBox.sendKeys("existential crisis");
         Thread.sleep(4000);
         WebElement searchButton = driver1.findElement(By.name("btnK"));
         searchButton.click();
@@ -72,7 +72,7 @@ public class Lab02 {
             System.out.println("Verification failed. The URL is not matching with the expected result.");
         }
         Thread.sleep(4000);
-        driver2.get("https://www.amazon.com");
+        driver2.get("https://www.amazon.com/");
         String expected4 = "Amazon.com. Spend less. Smile more.";
         String actual4 = driver2.getTitle();
         boolean result4 = Objects.equals(actual4, expected4);
@@ -86,10 +86,10 @@ public class Lab02 {
         String actual5=driver2.getCurrentUrl();
         boolean result5= Objects.equals(actual5, expected5);
         if (result5){
-            System.out.println("Verified. The title is matching with the expected result.");
+            System.out.println("Verified. The URL is matching with the expected result.");
         }
         else{
-            System.out.println("Verification failed. The title is not matching with the expected result.");
+            System.out.println("Verification failed. The URL is not matching with the expected result.");
 
         }
         driver2.navigate().back();
