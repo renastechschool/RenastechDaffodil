@@ -11,7 +11,7 @@ public class lab01 {
     Maximize window
 
 ##Task 2
-    Go to https://www.amazon.com/
+    Go to https://www.amazon.com//
 
     */
 

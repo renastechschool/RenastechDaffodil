@@ -4,7 +4,7 @@ package code.StudyHallSessions.Week9;
 //    create a class called SDET
 public class SDET {
 
- // Attributes:
+//     Attributes:
 //    name, employeeID, Salary , companyName
 
     String name; // instance variables

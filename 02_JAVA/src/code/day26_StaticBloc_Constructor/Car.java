@@ -11,16 +11,25 @@ public class Car {
     String color;
 
     //constructor
+//<<<<<<< HEAD
+    //we need access modifier and class name in order to create a constructor.
+    //ex1:
+//=======
     //we need access modifier and class name in order to create a constructor
     //ex 1 :
+//>>>>>>> 028c78cc4b9834e218a1c35e4ea950635a31d56d
     public Car(String brand, int year, double price, String color){ // 4 parameters
         this.brand=brand;
         this.year=year;
         this.price=price;
         this.color=color;
     }
+//<<<<<<< HEAD
+    //ex2:
+//=======
 
     //ex:2
+//>>>>>>> 028c78cc4b9834e218a1c35e4ea950635a31d56d
     public Car(String brand, int year){// 2 parameters
 
         //this keyword used to point instance variable in the class

@@ -1,6 +1,6 @@
 package student.Firat;
 
-public class lab11 {
+public class  lab11 {
     public static void main(String[] args) {
         //Write a program that can print the numbers between 1 ~ 100 that can be divisible by 3, 5, and 15.
         //if the number can be divisible by 3, 5 and 15, then it should only be displayed in DivisibelBy15' section

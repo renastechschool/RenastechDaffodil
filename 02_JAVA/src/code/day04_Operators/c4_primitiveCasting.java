@@ -13,6 +13,7 @@ public class c4_primitiveCasting {
 
         int i1=10;
         byte b1=(byte)i1;//explicit casting . This needs to be done mannuaaly
+        System.out.println(b1);
 
         double d1=2.5;
         float f1=(float) d1;

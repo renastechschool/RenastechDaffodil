@@ -20,7 +20,7 @@ public interface c6_InterfaceIntroduction {
 //    instance methods
 //    blocks
 
-    // void method1(){}; // we cant have instancce method in interface
+    // void method1(){}; // we cant have instance method in interface
     default void method(){};
     static  void method2(){};
     abstract void method3();  // public abstract method

@@ -13,7 +13,7 @@ public class lab09 {
 
         for (int i = 0; i < arr.length; i++) {
             for (int j = 0; j < arr.length ; j++) {
-                if (arr[i]<arr[j]){
+                if (arr[i]>arr[j]){
 
                     number = arr[i];
                     arr[i]=arr[j];
@@ -24,19 +24,7 @@ public class lab09 {
         }
         System.out.println(Arrays.toString(arr));
 
-        int [] arr2 = new int[arr.length];
-        int temp = 0;
 
-        for (int i = arr.length-1; i >=0 ; i--) {
-            arr2[temp] = arr [i];
-            temp++;
-
-        }
-
-
-
-
-        System.out.println(Arrays.toString(arr2));
 
 
 
