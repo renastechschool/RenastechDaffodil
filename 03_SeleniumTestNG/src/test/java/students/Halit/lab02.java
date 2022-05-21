@@ -84,6 +84,6 @@ public class lab02 {
             driver.navigate().refresh();
             driver.close();
 
-        }
+    }
 
     }
