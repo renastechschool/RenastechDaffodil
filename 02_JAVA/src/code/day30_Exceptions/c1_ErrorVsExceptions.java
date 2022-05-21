@@ -31,8 +31,9 @@ public class c1_ErrorVsExceptions {
     public static void method(int number){
 
         while (number != 0 ){
+
             number = number+1; //6 7
-            method(number); //6 7  StackOverflowError
+        method(number); //6 7  StackOverflowError
         }
 
     }
