@@ -1,7 +1,7 @@
 package code.StudyHallSessions.Week10.Session2;
 
 public class Payment {
-    //atributes for Payment Class
+    //attributes for Payment Class
     String payerName;
     String recieverName;
     double amount;

@@ -8,7 +8,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class c3_GoogleNameLocator {
     //TASK: Google search
-    //1- Open a chrome browser
+    //1- Open a Chrome browser
     //2- Go to: https://google.com
     //3- Write “orange” in search box
     //4- Click google search button
