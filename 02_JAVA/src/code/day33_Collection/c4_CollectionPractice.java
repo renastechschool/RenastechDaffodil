@@ -1,5 +1,6 @@
 package code.day33_Collection;
 
+
 import java.util.Arrays;
 import java.util.LinkedHashSet;
 import java.util.TreeSet;
@@ -59,7 +60,7 @@ List allows any number of null elements. Set can have only a single null element
         // 2. write a program that can identify if two strings are build out of the same letters
         //String str1="abcabccabd";  //abcd
         //        String str2="dcbaccc"; //dcba  //abcd
-        //first i need to remove dublicates ; any set method
+            //first i need to remove dublicates ; any set method
             //second make sure to sort them so you can compare
 
         String str1="abcabccabd";

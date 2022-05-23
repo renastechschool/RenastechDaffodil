@@ -11,16 +11,16 @@ public class c3_Set {
     public static void main(String[] args) {
 
 
-        //all type of sets are not going to accept duplicates
+        //all type of sets are not going to accept dublicates
 
-        //if you have the list of numbers that you don't want to store duplicate ones  which collection type you will use ?
-        //set will be preferred
+        //if you have the list of numbers that you dont want to store dublicate ones  which collection type you will use ?
+        //set will be prefered
 
         Set<String> letters=new HashSet<>();
 
         //Hashset
         //accept null values
-        //it doesn't accept duplicates
+        //it doesnt accept dublicates
         //it has sort logic but it is not always from small to large
 
         letters.add("a");
