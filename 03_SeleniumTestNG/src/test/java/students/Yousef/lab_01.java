@@ -11,7 +11,7 @@ public class lab_01 {
 
   //  Go to https://www.etsy.com/
  // Maximize window
-        WebDriverManager.chromedriver();
+        WebDriverManager.chromedriver ().setup();
         WebDriver driver = new ChromeDriver();
         driver.get("https://www.etsy.com/");
         driver.manage().window().maximize();

@@ -1,5 +1,9 @@
 package students.hatice;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
 public class Lab1 {
     public static void main(String[] args) {
 
