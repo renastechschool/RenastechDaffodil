@@ -1,6 +1,5 @@
 package students.EgeGunege;
 
-
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -25,7 +24,7 @@ public class lab03 {
         }else{
             System.out.println("Title does not start with apple word");
         }
-
+        // GenericUtils.Stars();
         driver.navigate().back();
         Thread.sleep(3000);
         driver.findElement(By.name("q")).sendKeys("cherry");
@@ -39,7 +38,7 @@ public class lab03 {
         }else{
             System.out.println("Title does not have cherry word");
         }
-
+        //GenericUtils.Stars();
         //Task2-Google Feeling Lucky Button
         driver.get("https://www.google.com");
         Thread.sleep(3000);
@@ -54,7 +53,7 @@ public class lab03 {
         }else{
             System.out.println("Title does not start with apple word");
         }
-
+        //GenericUtils.Stars();
         driver.get("https://opensource-demo.orangehrmlive.com/");
         driver.findElement(By.id("txtUsername")).sendKeys("Admin");
         Thread.sleep(2000);
