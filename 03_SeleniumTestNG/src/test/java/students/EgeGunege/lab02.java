@@ -37,7 +37,7 @@ public class lab02 {
         }else {
             System.out.println("Amazon title does not contains Smile and title verification has failed");
         }
-        code.MyUtils.GenericUtils.Stars();
+        //code.MyUtils.GenericUtils.Stars();
         //Task2-1
         String expectedURL="https://www.etsy.com/";
         driver.get(expectedURL);
