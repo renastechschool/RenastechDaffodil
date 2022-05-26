@@ -8,6 +8,9 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.util.List;
 
+/**
+ *
+ */
 public class c5_Findelements {
     public static void main(String[] args) throws InterruptedException {
         //1. Open Chrome browser

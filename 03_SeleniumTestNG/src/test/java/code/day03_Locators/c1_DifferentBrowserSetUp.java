@@ -18,4 +18,5 @@ public class c1_DifferentBrowserSetUp {
         driver.get("https://www.google.com");
 
     }
+
 }
