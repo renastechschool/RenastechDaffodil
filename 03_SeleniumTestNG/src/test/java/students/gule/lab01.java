@@ -10,7 +10,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 //        ##Task 2
 //        Go to https://www.amazon.com/
 //        get title and print out
-public class day01_homework {
+public class lab01 {
     public static void main(String[] args) {
         WebDriverManager.chromedriver().setup();
         WebDriver chrome = new ChromeDriver();
