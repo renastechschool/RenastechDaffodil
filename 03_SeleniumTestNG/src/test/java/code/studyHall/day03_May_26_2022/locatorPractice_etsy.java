@@ -7,20 +7,26 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import java.util.concurrent.TimeUnit;
 
 public class locatorPractice_etsy {
     WebDriver driver;
+    @BeforeMethod
+    public void setup(){
+
+    }
     @Test
     public void TC1_searchForEarrings(){
         //Search for earrings
         //Add some filters to the search
         WebDriverManager.chromedriver().setup();
         driver= WebDriverUtil.getDriver("chrome");
-
         driver.get("https://www.etsy.com/ca/");
+
+
         //First way to sendKeys and hit enter
         WebElement searchBox= driver.findElement(By.id("global-enhancements-search-query"));
         searchBox.sendKeys("earrings");
@@ -37,7 +43,7 @@ public class locatorPractice_etsy {
     }
 
     @Test
-    public void TC_2_addFilters(){
+    public void TC_2_addFilters(){//Search with filter
         driver.findElement(By.id("search-filter-button")).click();
 
     }
