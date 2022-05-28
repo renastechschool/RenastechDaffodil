@@ -1,4 +1,4 @@
-package code.day33_Collection;
+package code.day29_Inheritence_Owerrting.day33_Collection;
 
 import java.util.ArrayDeque;
 import java.util.PriorityQueue;
