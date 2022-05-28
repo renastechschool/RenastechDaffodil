@@ -12,7 +12,7 @@ import org.testng.annotations.Test;
 
 import java.util.List;
 
-public class guru99_radiobutton {
+public class locatersPractice {
     @Test(priority = 1)
     public void TC_1(){
         //1. Open Chrome browser
@@ -27,6 +27,7 @@ public class guru99_radiobutton {
         List<WebElement> checkBoxes=driver.findElements(By.xpath("//input[@type='checkbox']"));
         for (WebElement each:checkBoxes){
             if (!each.isSelected()){
+
                 System.out.println(each.getAttribute("value")+" is not selected");
             }else {
                 System.out.println(each.getAttribute("value")+" is selected");
