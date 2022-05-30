@@ -1,12 +1,12 @@
-package code.studyHall.day03_May_26_2022;
+package code.studyHall.day03_and_04;
 
 import code.utilities.WebDriverUtil;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -17,6 +17,11 @@ public class locatorPractice_etsy {
     @BeforeMethod
     public void setup(){
 
+    }
+    @AfterClass
+    public void tearDownDriver(){
+
+        driver.quit();
     }
     @Test
     public void TC1_searchForEarrings(){
@@ -43,8 +48,20 @@ public class locatorPractice_etsy {
     }
 
     @Test
-    public void TC_2_addFilters(){//Search with filter
+    public void TC_2_addFilters() throws InterruptedException {//Search with filter
         driver.findElement(By.id("search-filter-button")).click();
+        Thread.sleep(3000);
+
+//        WebElement freeShippingCheckBox=driver.findElement(By.id("special-offers-free-shipping"));
+//        Thread.sleep(3000);
+//        freeShippingCheckBox.click(); // we will come back to this part later
+
+        WebElement customBox=driver.findElement(By.id("search-filter-min-price-input"));
+        Thread.sleep(5000);
+        customBox.sendKeys("12");
+
+      WebElement applyButton=  driver.findElement(By.xpath("(//button[@type='submit'])[4]"));
+      applyButton.click();
 
     }
 }
