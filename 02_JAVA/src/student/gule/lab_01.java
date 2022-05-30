@@ -27,7 +27,7 @@ public class lab_01 {
     public static void main(String[] args) {
         System.out.println(reverse("HCET SANER"));
 
-        System.out.println(reverse1("ELUG"));
+        System.out.println(reverse1("❤ ELUG"));
 
     }
 }
