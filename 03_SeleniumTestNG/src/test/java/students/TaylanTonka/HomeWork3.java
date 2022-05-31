@@ -1,4 +1,4 @@
-package students.murat.TaylanTonka;
+package students.TaylanTonka;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
