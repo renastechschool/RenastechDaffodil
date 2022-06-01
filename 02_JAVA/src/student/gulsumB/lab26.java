@@ -1,5 +1,5 @@
 package student.gulsumB;
-
+//Write a method that can sort the ArrayList in descending order without using the sort method
 import java.util.ArrayList;
 import java.util.Arrays;
 
