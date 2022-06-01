@@ -4,7 +4,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class Task1And2 {
+public class lab01 {
     //Go to https://www.etsy.com/
     //Maximize window
 
