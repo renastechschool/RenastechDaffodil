@@ -10,11 +10,7 @@ public class c1_HelloSelenium {
         System.out.println("Hello World");
         //set up chrome driver
         WebDriverManager.chromedriver().setup();
-
-
-
-
-                //create a driver instance
+        //create a driver instance
                 WebDriver driver = new ChromeDriver();
 
                 //navigate to chrome browser
@@ -24,9 +20,7 @@ public class c1_HelloSelenium {
                 //navigate to chrome browser
                 driver.get("https://www.etsy.com/");
 
-
-
-
     }
 }
+
 
