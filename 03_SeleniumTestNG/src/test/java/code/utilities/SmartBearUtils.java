@@ -18,4 +18,20 @@ public class SmartBearUtils {
         Login.click();
 
     }
+    public static void negativeLoginForSmartBear(WebDriver driver,String userID,String passwordID){
+        //3- Enter username --->Tester
+        //4- Enter password --->test
+        //5- Click “Login” button
+        //invalid userid
+        WebElement userName=driver.findElement(By.id("ctl00_MainContent_username"));
+        userName.sendKeys(userID);
+        WebElement password=driver.findElement(By.id("ctl00_MainContent_password"));
+        //invalid passwordID
+        password.sendKeys(passwordID);
+        WebElement Login=driver.findElement(By.id("ctl00_MainContent_login_button"));
+        Login.click();
+
+    }
+
+
 }
