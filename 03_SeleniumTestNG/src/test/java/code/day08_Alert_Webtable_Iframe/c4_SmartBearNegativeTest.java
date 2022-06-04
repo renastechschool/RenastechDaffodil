@@ -30,7 +30,7 @@ public class c4_SmartBearNegativeTest {
 
     @Test(dataProvider ="testData")
     public void TC1NegativeTest(String userID,String passwordID){
-        SmartBearUtils.negativeLoginForSmartBear(driver,userID,passwordID);
+        SmartBearUtils.loginForSmartBear(driver);
 
     }
 
