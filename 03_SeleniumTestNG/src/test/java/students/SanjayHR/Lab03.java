@@ -52,7 +52,7 @@ public class Lab03 {
         }else{
             System.out.println("Title verification has failed. Does not contain cherry.");
         }
-        //chrome.quit();
+        //chrome.close();
 //TASK2: Google Feeling lucky button
 //1- Open a chrome browser
 //2- Go to: https://google.com
@@ -71,10 +71,17 @@ public class Lab03 {
         }else{
             System.out.println("Title verification has failed. Does not contain Apple.");
         }
-
-
-
-}
+//go to https://opensource-demo.orangehrmlive.com/
+//locate user name and send user name, (username=Admin)
+//locate user password and send password (password=admin123)
+//click on the login button
+        chrome.get("https://opensource-demo.orangehrmlive.com/");
+        chrome.findElement(By.xpath("//input[@name='txtUsername']")).sendKeys("Admin");
+        chrome.findElement(By.xpath("//input[@name='txtPassword']")).sendKeys("admin123");
+        Thread.sleep(2000);
+        chrome.findElement(By.xpath("//input[@type='submit']")).click();
+        //chrome.close();
+    }
 
 
 
