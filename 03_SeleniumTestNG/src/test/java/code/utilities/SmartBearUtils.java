@@ -50,7 +50,7 @@ public class SmartBearUtils {
                 return;
             }
         }
-        Assert.fail("Street name:"+streetName+"is not present on the table");
+        Assert.fail("Street name:"+streetName +" is not present on the table");
 
     }
 
