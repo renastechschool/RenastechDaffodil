@@ -1,7 +1,7 @@
 package student.Bora;
 
-import java.util.Arrays;
-import java.util.Scanner;
+import java.lang.reflect.Array;
+import java.util.*;
 
 public class lab00All {public static void main(String[] args) {} }
 class lab01{
@@ -406,4 +406,110 @@ class lab19{
             b=sum;
             System.out.println(sum);
 }}}
-class lab20{}
+class lab20{
+  public static void main(String[]args){
+      int a=2;
+      int b=3;
+      a=a*b;
+      b=a/b;
+      a=a/b;
+      System.out.println(a);
+      System.out.println(b);
+  }
+
+}
+class  lab21{
+    public static void main(String[] args) {
+        System.out.println(div(6,2));
+    }
+    public static int div(int a, int b){
+        int result=0;
+        for (int i=a;i>=0;i--){
+            if(a>=b){
+                a=a-b;
+                result++;
+            }
+        }
+        return result;
+    }
+}
+class  lab22{
+   // Write a return method that can reverse negative number and return it as int
+    public static void main(String[] args) {
+        System.out.println(absulute(-4));
+    }
+    public static int absulute(int a){
+        return Math.abs(a);
+    }
+}
+class  lab23{
+    //    Given a list of people' names: "Amed",  "Eric""John", "Eric", "Amed" , "Eric" .
+    //        Write a java operation to remove all the names named , "Eric"
+    public static void main(String[] args) {
+       // String[] peoplenames={"Amed", "Eric", "John", "Eric", "Amed", "Eric"};
+
+    ArrayList<String> pnames=new ArrayList<>();
+    pnames.addAll(Arrays.asList("Amed", "Eric", "John", "Eric", "Amed", "Eric"));
+    pnames.removeAll(Arrays.asList("Eric"));
+
+
+        System.out.println(pnames);
+    }
+}
+
+class lab24{
+//Given a list of Integers 1, 2, 3, 4, 5, 6 ....etc. remove all values greater than 100.
+    public static void main(String[] args) {
+        List<Integer> list=new ArrayList<>();
+                list.addAll(Arrays.asList(3,45532,325,2,3,3243,102));
+       for (int i=0;i<list.size();i++) {
+          if (list.get(i)>100){
+              System.out.println(list.get(i));
+              list.remove(i);
+              i--;
+          }
+
+       }
+        System.out.println(list);
+    }
+}
+
+class lab25{
+    // Write a method that can sort the ArrayList in Ascending order without using the sort method
+    public static void main(String[] args) {
+       List<Integer> mixList=new ArrayList<>();
+        mixList.addAll(Arrays.asList(34,14,4452,2340,45,425,12));
+
+        System.out.println(order(mixList));
+    }
+   public static List<Integer> order(List<Integer> ord){
+       for (int j=0;j<ord.size();j++){
+           for (int i=ord.size()-1;i>j;i--) {
+               if (ord.get(j)>ord.get(i)){
+                   int min=ord.get(j);
+                   ord.set(j,ord.get(i)) ;
+                   ord.set(i,min);
+               }}}
+        return ord; }
+
+}
+
+class lab26{
+    //Write a method that can sort the ArrayList in descending order without using the sort method
+    public static void main(String[] args) {
+        List<Integer> mixList=new ArrayList<>();
+        mixList.addAll(Arrays.asList(34,14,4452,2340,45,425,12));
+
+        System.out.println(order(mixList));
+    }
+    public static List<Integer> order(List<Integer> ord){
+        for (int j=0;j<ord.size();j++){
+            for (int i=ord.size()-1;i>j;i--) {
+                if (ord.get(j)>ord.get(i)){
+                    int min=ord.get(j);
+                    ord.set(j,ord.get(i)) ;
+                    ord.set(i,min);
+                }}}
+        return ord; }
+
+    }
