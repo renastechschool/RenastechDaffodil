@@ -36,6 +36,7 @@ public class lab06 {
         select.selectByValue("CANADA");
 
 
+
     }
 
 }
