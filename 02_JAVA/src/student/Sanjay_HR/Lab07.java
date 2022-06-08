@@ -1,9 +1,8 @@
 package student.Sanjay_HR;
 
 import java.util.Arrays;
-import java.util.Collections;
 
-public class Lab07 {
+public class lab07 {
     //Write a return method that can concate two arrays
     public static void main(String[] args) {
         int[] a={1,2,3};

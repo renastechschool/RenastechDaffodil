@@ -1,6 +1,6 @@
 package student.Sanjay_HR;
 
-public class Lab19 {
+public class lab19 {
     //Write a return method that returns the  Fibonacci of any given number.
     public static void main(String[] args) {
     fibonacci(25);

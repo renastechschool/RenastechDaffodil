@@ -1,6 +1,6 @@
 package student.Sanjay_HR;
 import java.util.Arrays;
-public class Lab15 {
+public class lab15 {
     //Given alphanumeric String, we need to split the string into substrings of consecutive letters or numbers,
     //sort the individual string and append them back together
     //Ex:

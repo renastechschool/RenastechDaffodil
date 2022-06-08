@@ -2,7 +2,7 @@ package student.Sanjay_HR;
 
 import java.util.Arrays;
 
-public class Lab17 {
+public class lab17 {
     //Write a method that can move all the zeros to  last indexes of the array (Do Not Use Sort Method)
     //Ex:
     //input:  {1,0,2,0,3,0,4,0};
