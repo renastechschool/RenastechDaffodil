@@ -6,9 +6,10 @@ import org.testng.annotations.Test;
 
 public class c2_TestNG {
 @BeforeMethod
-    public void setup(){
+    public void setup() {
     System.out.println("Before method is running");
 }
+
 @AfterMethod
     public void closing(){
     System.out.println("After Method is running");
