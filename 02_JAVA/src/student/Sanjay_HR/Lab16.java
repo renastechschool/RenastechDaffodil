@@ -1,6 +1,6 @@
 package student.Sanjay_HR;
 
-public class Lab16 {
+public class lab16 {
     //1. Write a return method that can verify if a password is valid or not.
     //requirements:
     //1. Password MUST be at least have 6 characters and should not contain space

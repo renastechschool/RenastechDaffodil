@@ -1,6 +1,6 @@
 package student.Sanjay_HR;
 
-public class Lab14 {
+public class lab14 {
     //Write a method that can return the sum of the digits in a string
     public static void main(String[] args) {
         String str = "a4v6aaa9!44";

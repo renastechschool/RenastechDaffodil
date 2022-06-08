@@ -2,7 +2,7 @@ package student.Sanjay_HR;
 
 import java.util.Arrays;
 
-public class Lab06 {
+public class lab06 {
     //Write a method that can find the minimum number from an int Array
     public static void main(String[] args) {
         int [] numbers={1,2,3};
