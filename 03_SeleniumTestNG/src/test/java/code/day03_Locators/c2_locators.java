@@ -20,7 +20,7 @@ public class c2_locators {
         //driver.findElement(By.partialLinkText("Gm")).click();
 
         //to find by Classname locator
-        driver.findElement(By.className("gb_d")).click();
+        driver.findElements(By.className("gLFyf gsfi"));
 
 
     }

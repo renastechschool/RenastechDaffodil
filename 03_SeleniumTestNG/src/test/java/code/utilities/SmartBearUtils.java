@@ -21,6 +21,8 @@ public class SmartBearUtils {
         Login.click();
 
     }
+
+
     public static void negativeLoginForSmartBear(WebDriver driver,String userID,String passwordID){
         //3- Enter username --->Tester
         //4- Enter password --->test
@@ -53,5 +55,6 @@ public class SmartBearUtils {
         Assert.fail("Street name:"+streetName +" is not present on the table");
 
     }
+
 
 }
