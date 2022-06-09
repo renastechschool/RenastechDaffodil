@@ -2,7 +2,7 @@ package student.Sanjay_HR;
 
 import java.util.Arrays;
 
-public class Lab05 {
+public class lab05 {
     //Write a method that can find the maximum number from an int Array
     public static void main(String[] args) {
         int [] numbers={1,2,3};
