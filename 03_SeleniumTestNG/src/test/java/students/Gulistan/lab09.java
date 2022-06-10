@@ -3,6 +3,8 @@ package students.Gulistan;
 import code.utilities.WebDriverUtil;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -19,8 +21,7 @@ public class lab09 {
     public void setup() {
         driver = WebDriverUtil.getDriver("chrome");
         driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-
+        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
     }
     @AfterMethod
     public void closing() throws InterruptedException {
@@ -28,18 +29,25 @@ public class lab09 {
         driver.close();
     }
     @Test
-    public void getWindows() {
+    public void getWindows() throws InterruptedException {
         driver.get("http://www.w3schools.com/tags/tryit.asp?filename=tryhtml_link_target");
-        //String currentWindow = driver.getWindowHandle();
-        Set<String> allWindows = driver.getWindowHandles(); //store all windows
-        List<String> windowList = new ArrayList<>();
-        for (String windows : allWindows) {
-            windowList.add(windows);
-            driver.switchTo().window(windows);
-            System.out.println("Current title is " + driver.getTitle());
-        }
+        System.out.println(driver.getWindowHandle());
+        driver.findElement(By.xpath("//a[@href='https://www.w3schools.com']")).click();
 
+        Set<String>  windows = driver.getWindowHandles();
+        List<String> listWindows = new ArrayList<>(windows);
+
+        System.out.println(windows.size());
+
+        driver.switchTo().window(listWindows.get(1));
+        System.out.println(driver.getWindowHandle());
+
+        Assert.assertTrue(driver.findElement(By.xpath("//i[@class='fa fa-logo']")).isDisplayed());
+        driver.switchTo().window(listWindows.get(0));
+
+        System.out.println(driver.getTitle());
+        System.out.println(driver.getWindowHandle());
+
+        Assert.assertTrue(driver.findElement(By.id("runbtn")).getText().contains("Run ❯"));
     }
-    }
-
-
+}
