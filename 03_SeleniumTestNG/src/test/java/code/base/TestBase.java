@@ -3,9 +3,11 @@ package code.base;
 import code.utilities.BrowserUtils;
 import code.utilities.WebDriverUtil;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
+import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
 public class TestBase {
