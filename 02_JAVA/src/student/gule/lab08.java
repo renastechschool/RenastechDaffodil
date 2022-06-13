@@ -4,7 +4,7 @@ package student.gule;
 //Ex: int[] arr = {10, 9, 8, 7};
 //  arr = Sort(arr);  ==>{ 7, 8, 9, 10};
 
-public class lab_08 {
+public class lab08 {
     public static void main(String[] args) {
 
             int[] arr = new int[] { 100, 99, 98, 97, 96 };

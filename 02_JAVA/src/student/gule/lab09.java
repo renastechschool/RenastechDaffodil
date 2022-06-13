@@ -3,7 +3,7 @@ package student.gule;
 // the sort method of the Arrays class
 //Ex: int[] arr = {10,20,7, 8, 90};
 //         arr = Sort(arr); ==> {90, 20, 10, 8, 7};
-public class lab_09 {
+public class lab09 {
     public static void main(String[] args) {
 
         int[] arr = new int[] { 10,20,7, 8, 90 };

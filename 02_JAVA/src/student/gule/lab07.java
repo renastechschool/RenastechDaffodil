@@ -5,7 +5,7 @@ import java.util.Arrays;
 
 //Lab 07 -  //(Array) Concat two arrays
 //Write a return method that can concate two arrays
-public class lab_07 {
+public class lab07 {
     public static void main(String[] args) {
 
         ArrayList<String> nameList1 = new ArrayList<>();

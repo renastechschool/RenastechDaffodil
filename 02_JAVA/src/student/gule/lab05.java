@@ -4,7 +4,7 @@ package student.gule;
 
 import java.util.ArrayList;
 
-public class lab_05 {
+public class lab05 {
     public static void main(String[] args) {
         ArrayList<Integer> list = new ArrayList<>();
         list.add(21);

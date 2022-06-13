@@ -7,7 +7,7 @@ package student.gule;
 
 import java.util.Arrays;
 
-public class lab_02 {
+public class lab02 {
 
     public static void main(String[] args) {
 

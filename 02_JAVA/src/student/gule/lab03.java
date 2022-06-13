@@ -3,12 +3,10 @@ package student.gule;
 //Write a return method that can remove the duplicated values from String
 //Ex: removeDup("AAABBBCCC") ==> ABC
 
-import java.util.HashSet;
 import java.util.LinkedHashSet;
-import java.util.Locale;
 import java.util.Set;
 
-public class lab_03 {
+public class lab03 {
 
     public static void main(String[] args) {
 

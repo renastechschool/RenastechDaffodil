@@ -3,7 +3,7 @@ package student.gule;
 //Write a return method that can find the unique characters from the String
 //Ex: unique("AAABBBCCCDEF") ==> "DEF";
 
-public class lab_04 {
+public class lab04 {
     public static void main(String[] args) {
         String word = "AAABBBCCCDEF";
         System.out.println(unique("AAABBBCCCDEF"));
