@@ -79,6 +79,8 @@ List allows any number of null elements. Set can have only a single null element
         System.out.println("rst1 = " + rst1);
         System.out.println("rst2 = " + rst2);
 
+        System.out.println(rst1.equals(rst2));
+
         String newStr1=rst1.toString();
         String newStr2=rst2.toString();
 
@@ -115,3 +117,5 @@ List allows any number of null elements. Set can have only a single null element
 //    //             accepts null
 //    // TreeMap: sorts the keys in ascending (sorted map)
 //    //         does not accept null
+// nnn
+//mm

@@ -10,6 +10,7 @@ public class lab01 {
             System.out.print(str.charAt(i));
 
         }
+       
 
     }
 }

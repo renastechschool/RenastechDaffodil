@@ -2,9 +2,15 @@ package code.Pages;
 
 import code.utilities.DriverUtil;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.time.Duration;
 
 public abstract class BasePage {
-    public BasePage(){
+
+
+    //encapsulation
+   protected WebDriverWait driverWait=new WebDriverWait(DriverUtil.getDriver(), Duration.ofSeconds(20));
 
     /*
 
@@ -17,6 +23,7 @@ IN POM Design you need to have some structure for each page :
 3. Create methods related webelements
 
      */
+    public BasePage(){
         PageFactory.initElements(DriverUtil.getDriver(),this);
     }
 }
