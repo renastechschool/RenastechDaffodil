@@ -37,6 +37,19 @@ public class c3_ExplicitlyWait {
     @Test
     public void TC2_explicitlyWait(){
 
+        WebDriverWait driverWait=new WebDriverWait(DriverUtil.getDriver(),Duration.ofSeconds(20));
+        DriverUtil.getDriver().get("https://www.google.com");
+        driverWait.until(ExpectedConditions.titleIs("Google"));
+
+        WebElement GoogleSearchBox=DriverUtil.getDriver().findElement(By.name("q"));
+
+        driverWait.until(ExpectedConditions.elementToBeClickable(GoogleSearchBox));
+        driverWait.until(ExpectedConditions.visibilityOf(GoogleSearchBox));
+        GoogleSearchBox.sendKeys("apple");
+
+
+
+
     }
 
 
