@@ -15,7 +15,7 @@ public class lab3 {
         if (actualTitle.contains(expectedWord)){
             System.out.println("Title contain 'Smile' ..");
         }else {
-            System.out.println("Title doesn't contain 'Smile' ..");
+            System.out.println("Title doesn't ocontain 'Smile' ..");
         }
 
 
