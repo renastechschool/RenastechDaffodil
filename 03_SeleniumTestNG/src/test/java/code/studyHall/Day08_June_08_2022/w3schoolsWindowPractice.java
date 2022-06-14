@@ -56,7 +56,6 @@ public class w3schoolsWindowPractice {
         WebElement logoOnSecondWindow=driver.findElement(By.xpath("//a[@title='Home']"));
 
         Assert.assertTrue(logoOnSecondWindow.isDisplayed());
-
         driver.switchTo().window(windowsList.get(0));
 
         System.out.println(currentWindowAtThisPoint);
