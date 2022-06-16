@@ -1,9 +1,8 @@
 package student.Yousef;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 
-public class lab5 {
+public class Lab5 {
     public static void main(String[] args) {
         //Write a method that can find the maximum number from an int Array
 
