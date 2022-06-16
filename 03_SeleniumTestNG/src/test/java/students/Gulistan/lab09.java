@@ -21,7 +21,8 @@ public class lab09 {
     public void setup() {
         driver = WebDriverUtil.getDriver("chrome");
         driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+
     }
     @AfterMethod
     public void closing() throws InterruptedException {

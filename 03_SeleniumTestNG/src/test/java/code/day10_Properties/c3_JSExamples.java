@@ -31,6 +31,7 @@ public class c3_JSExamples extends TestBase {
         JavascriptExecutor js=(JavascriptExecutor) driver;
         driver.get("http://demo.guru99.com/test/guru99home/");
         js.executeScript("window.scrollBy(0,1000)");
+
     }
 }
           /*
