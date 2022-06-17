@@ -1,6 +1,6 @@
 package student.Yousef;
 
-public class lab7 {
+public class Lab7 {
     public static void main(String[] args) {
 
         //Write a return method that can concate two arrays
