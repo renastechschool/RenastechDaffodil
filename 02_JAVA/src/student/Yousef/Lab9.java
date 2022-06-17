@@ -2,7 +2,7 @@ package student.Yousef;
 
 import java.util.Arrays;
 
-public class lab9 {
+public class Lab9 {
     public static void main(String[] args) {
         //Write a return method that can sort an int array in descending order without using the sort method of the Arrays class
         //Ex: int[] arr = {10,20,7, 8, 90};

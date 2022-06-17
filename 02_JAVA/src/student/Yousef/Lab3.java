@@ -1,9 +1,6 @@
 package student.Yousef;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-
-public class lab3 {
+public class Lab3 {
     public static void main(String[] args) {
         //Write a return method that can remove the duplicated values from String
         //Ex: removeDup("AAABBBCCC") ==> ABC
