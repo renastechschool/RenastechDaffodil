@@ -1,7 +1,7 @@
 package students.TaylanTonka;
 
 import code.utilities.WebDriverUtil;
-import jdk.nashorn.internal.runtime.arrays.IteratorAction;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;

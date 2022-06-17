@@ -1,6 +1,6 @@
 package student.Yousef;
 
-public class lab6 {
+public class Lab6 {
     public static void main(String[] args) {
         //Write a method that can find the maximum number from an int Array
 
