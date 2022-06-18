@@ -1,10 +1,11 @@
 package code.stepDefinitions;
 
+import code.utils.BrowserUtils;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
-public class steps {
+public class steps extends BrowserUtils {
     @Given("The user wants to go to Payment Gateway Website")
     public void the_user_wants_to_go_to_payment_gateway_website() {
 
