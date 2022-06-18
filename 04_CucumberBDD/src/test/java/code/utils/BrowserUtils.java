@@ -11,6 +11,8 @@ import java.util.concurrent.TimeUnit;
 import java.util.function.Function;
 
 public class BrowserUtils {
+    //We created browser utils to store useful methods to help with writing more understandable code
+    //we will only be using some of them the rest will be for reference
     public static void staticWait(int second){
         try {
             Thread.sleep(1000 * second);
@@ -27,8 +29,8 @@ public class BrowserUtils {
     public static void clickWithWait(WebElement webElement){
 
         Wait wait = new FluentWait(Driver.getDriver())
-                .withTimeout(Duration.ofSeconds(15))
-                .pollingEvery(Duration.ofMillis(800))
+                .withTimeout(Duration.ofSeconds(15)) //wait for 15 seconds
+                .pollingEvery(Duration.ofMillis(800))//polling > it will check for that elements for > 5
                 .ignoring(NoSuchElementException.class)
                 .ignoring(ElementNotVisibleException.class)
                 .ignoring(ElementClickInterceptedException.class)
