@@ -11,7 +11,8 @@ import java.util.Set;
 import java.util.concurrent.TimeUnit;
 import java.util.function.Function;
 
-public class BrowserUtils {
+public class BrowserUtils  {
+
     public static void staticWait(int second){
         try {
             Thread.sleep(1000 * second);

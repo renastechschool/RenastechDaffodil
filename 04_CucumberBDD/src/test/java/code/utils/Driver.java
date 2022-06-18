@@ -7,7 +7,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
-public class Driver {
+public class Driver  {
     //  private static WebDriver driver; //from old design
     private static ThreadLocal<WebDriver> driverPool=new ThreadLocal<>(); // its a pool of drivers so we can run parallel rtests
 
