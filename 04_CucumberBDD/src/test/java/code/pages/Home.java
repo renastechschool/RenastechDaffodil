@@ -1,4 +1,4 @@
 package code.pages;
 
-public class Payment {
+public class Home {
 }
