@@ -7,6 +7,6 @@ Feature: Payment Gateway functional test
     |CNumber|4444443334433333|
     |EMonth | 12             |
     |EYear  |2026            |
-    |CVVCode| 777            |
+    |CVVCode| 777           |
     Then The user wants to click on pay now
     And The user wants to verify messeage as "Payment successfull!"

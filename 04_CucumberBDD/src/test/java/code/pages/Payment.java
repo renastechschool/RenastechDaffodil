@@ -1,11 +1,16 @@
 package code.pages;
 
 import code.utils.BrowserUtils;
+import code.utils.Driver;
 import io.cucumber.java.an.Y;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 
 public class Payment extends BrowserUtils {
+    public Payment(){
+        PageFactory.initElements(Driver.getDriver(),this);
+    }
 
     @FindBy(id = "card_nmuber")
     private WebElement cardNumber;
