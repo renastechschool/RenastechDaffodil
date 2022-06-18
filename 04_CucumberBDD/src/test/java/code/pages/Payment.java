@@ -1,22 +1,22 @@
 package code.pages;
 
 import code.utils.BrowserUtils;
+import io.cucumber.java.an.Y;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class Payments extends BrowserUtils {
+import static code.utils.BrowserUtils.BrowserUtils.staticWait;
+
+public class Payment extends BrowserUtils {
+
     @FindBy(id = "card_nmuber")
     private WebElement cardNumber;
-
     @FindBy(id = "month")
     private WebElement month;
-
     @FindBy(id = "year")
     private WebElement year;
-
     @FindBy(id = "cvv_code")
     private WebElement cvv_code;
-
     @FindBy(xpath = "//input[@type='submit']")
     private WebElement payButton;
 
