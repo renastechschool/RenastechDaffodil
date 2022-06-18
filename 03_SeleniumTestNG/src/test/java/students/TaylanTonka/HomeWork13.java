@@ -59,11 +59,9 @@ public class HomeWork13 {
         String customerName= base.readPropertiesFile("customerName");
         String gender= base.readPropertiesFile("gender");
         String dateOfBirth = base.readPropertiesFile("dateOfBirth");
-
         String year= dateOfBirth.split("-")[0];
         String month=dateOfBirth.split("-")[1];
         String day=dateOfBirth.split("-")[2];
-        System.out.println("day = " + day);
         String Address= base.readPropertiesFile("Address");
         String city= base.readPropertiesFile("city");
         String state= base.readPropertiesFile("state");
@@ -72,9 +70,7 @@ public class HomeWork13 {
         String email= base.readPropertiesFile("email");
         String passwd= base.readPropertiesFile("passwd");
         newCustomerEntryPage ep = new newCustomerEntryPage();
-
         ep.enterCustomerName(customerName);
-
         if(gender.equalsIgnoreCase("male"))
         {
             ep.maleGenderChoice();
@@ -83,6 +79,7 @@ public class HomeWork13 {
         {
             ep.femaleGenderChoice();
         }
+        ep.enterDOB(year,month,day);
         ep.inputAddress(Address);
         ep.inputCity(city);
         ep.inputState(state);
@@ -90,17 +87,14 @@ public class HomeWork13 {
         ep.inputMobileNumber(number);
         ep.inputEmail(email);
         ep.inputPassword(passwd);
-
         Assert.assertTrue(DriverUtil.getDriver().getTitle().contains(" New Customer Entr"));
         ep.clickSubmit();
-
     }
 
     @Test(priority = 4,dependsOnMethods = "newCustomerPageTest")
     public void verifyregistered()
     {
         registeredPage rp = new registeredPage();
-
         Assert.assertTrue(rp.verifyMessage());
     }
 

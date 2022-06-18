@@ -57,9 +57,10 @@ public class newCustomerEntryPage extends base{
         femaleGender.click();
     }
 
-    public void enterDOB(String Year,String Month, String day)
-    {
+    public void enterDOB(String Year,String Month, String day)  {
+
         dob.sendKeys(Year, Keys.ARROW_RIGHT,Month,day);
+
     }
 
     public void inputAddress(String Address)
