@@ -7,7 +7,6 @@ import io.cucumber.java.en.When;
 public class steps {
     @Given("The user wants to go to Payment Gateway Website")
     public void the_user_wants_to_go_to_payment_gateway_website() {
-<<<<<<< HEAD
         // Write code here that turns the phrase above into concrete actions
         throw new io.cucumber.java.PendingException();
     }
@@ -38,24 +37,4 @@ public class steps {
         throw new io.cucumber.java.PendingException();
     }
 
-=======
-
-    }
-    @When("The user wants to buy elephant toy")
-    public void the_user_wants_to_buy_elephant_toy() {
-
-    }
-    @Then("The user wants to enter payment information as")
-    public void the_user_wants_to_enter_payment_information_as(io.cucumber.datatable.DataTable dataTable) {
-
-    }
-    @Then("The user wants to click on pay now")
-    public void the_user_wants_to_click_on_pay_now() {
-
-    }
-    @Then("The user wants to verify messeage as {string}")
-    public void the_user_wants_to_verify_messeage_as(String string) {
-
-    }
->>>>>>> 9d863dc54530222af1afea019bbf78380e121592
 }
