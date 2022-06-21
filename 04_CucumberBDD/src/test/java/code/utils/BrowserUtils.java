@@ -21,7 +21,7 @@ public class BrowserUtils{
         }
     }
     public static void setWaitTime(){
-        Driver.getDriver().manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+        Driver.getDriver().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
     }
 
 
