@@ -66,4 +66,7 @@ public class steps extends BrowserUtils {
     public void the_user_wants_to_enter_cvv_code_as(String string) {
          payment.setCvv_code(string);
     }
+
+    //OrangeHRM.features
+
 }
