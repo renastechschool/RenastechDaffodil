@@ -13,6 +13,8 @@ import io.cucumber.java.en.When;
 import java.util.Map;
 
 public class steps extends BrowserUtils {
+    Home home =new Home();
+    Payment payment=new Payment();
     @Given("The user wants to go to Payment Gateway Website")
     public void the_user_wants_to_go_to_payment_gateway_website() {
         Driver.getDriver().get(ConfigurationsReader.getProperties("demoURL"));
@@ -21,7 +23,6 @@ public class steps extends BrowserUtils {
     }
     @When("The user wants to buy elephant toy")
     public void the_user_wants_to_buy_elephant_toy() {
-        Home home =new Home();
         home.setBuyNow();
     }
     @Then("The user wants to enter payment information as")
@@ -42,4 +43,28 @@ public class steps extends BrowserUtils {
         OrderSuccessful orderSuccessful=new OrderSuccessful();
         orderSuccessful.setVerificationText(string);
     }
+
+    @When("The user wants to buy elephant toys as {string}")
+    public void the_user_wants_to_buy_elephant_toys_as(String string) {
+        home.selectQuantity(string);
+        home.setBuyNow();
+
+    }
+    @Then("The user wants to enter Credit Card Number as {string}")
+    public void the_user_wants_to_enter_credit_card_number_as(String string) {
+        payment.setCardNumber(string);
+    }
+    @Then("The user wants to enter Expiration Month as {string}")
+    public void the_user_wants_to_enter_expiration_month_as(String string) {
+        payment.setMonth(string);
+    }
+    @Then("The user wants to enter Expiraton Year as {string}")
+    public void the_user_wants_to_enter_expiraton_year_as(String string) {
+        payment.setYear(string);
+    }
+    @Then("The user wants to enter CVVCode as {string}")
+    public void the_user_wants_to_enter_cvv_code_as(String string) {
+        payment.setCvv_code(string);
+    }
+
 }
