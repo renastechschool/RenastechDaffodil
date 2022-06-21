@@ -51,9 +51,6 @@ public class lab11 {
         action.moveToElement(target).perform();
 
         System.out.println(target.getText());
-
-
-
     }
 
 }
