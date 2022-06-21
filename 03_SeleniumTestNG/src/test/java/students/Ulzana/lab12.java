@@ -9,23 +9,33 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import java.time.Duration;
 import java.util.Iterator;
 import java.util.Set;
+import java.util.concurrent.TimeUnit;
 
 public class lab12 {
+    WebDriver driver;
+
+    @BeforeMethod
+    public void setup(){
+        WebDriverManager.chromedriver().setup();
+        driver=new ChromeDriver();
+        driver.manage().window().maximize();
+        driver.manage().timeouts().implicitlyWait(8, TimeUnit.SECONDS);    }
+
+    @AfterMethod    public void close(){driver.quit();}
 
 
     @Test
     public void TC1() throws InterruptedException {
 
 //Navigate to "https://www.w3schools.com/js/tryit.asp?filename=tryjs_prompt"
-        WebDriverManager.chromedriver().setup();
-        WebDriver driver = new ChromeDriver();
         driver.get("https://www.w3schools.com/js/tryit.asp?filename=tryjs_prompt");
-        driver.manage().window().maximize();
 
 //Click on the "Try it" button
         driver.switchTo().frame(1);
@@ -35,7 +45,7 @@ public class lab12 {
 
 //Enter Your name on the Alert Box and Accept alert
         Alert alert = driver.switchTo().alert();
-        String expectedText = "eagles";
+        String expectedText = "Team222";
         alert.sendKeys(expectedText);
         alert.accept();
 
@@ -66,5 +76,6 @@ public class lab12 {
 //Switch to first tab
         driver.switchTo().window(parentPage);
     }
+
 }
 
