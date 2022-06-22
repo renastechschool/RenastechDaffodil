@@ -13,6 +13,7 @@ import java.util.Map;
 
 public class stepDefinations {
     inputPage ip = new inputPage();
+    String financeDetail;
     @Given("The user landing to the insurance app home page")
     public void the_user_landing_to_the_insurance_app_home_page() {
         // Write code here that turns the phrase above into concrete actions
@@ -28,6 +29,8 @@ public class stepDefinations {
 
     @Then("The user fill the input fields")
     public void the_user_fill_the_input_fields(Map<String,String> table) throws InterruptedException {
+
+         financeDetail = table.get("Finance_Details");
         ip.selectYear(table.get("Vehicle_Year"));
         ip.selectMake(table.get("Make"));
         ip.selectModel(table.get("Series"));
@@ -44,13 +47,15 @@ public class stepDefinations {
         ip.enterLicenceNumber(table.get("Licence_Number"));
         ip.clickNext();
         ip.selectLicenceHistory(table.get("Foreign_Licence"));
-        ip.submitForm();
+
     }
 
     @Then("Verify that in finance detail you should be able to select only one option")
-    public void verify_that_in_finance_detail_you_should_be_able_to_select_only_one_option() {
+    public void verify_that_in_finance_detail_you_should_be_able_to_select_only_one_option() throws InterruptedException {
         // Write code here that turns the phrase above into concrete actions
 
+        Assert.assertTrue(ip.verifyFinanceSection( financeDetail));
+        ip.submitForm();
     }
 
     @Then("Verify that when you complete application you should be able to see {string} button")

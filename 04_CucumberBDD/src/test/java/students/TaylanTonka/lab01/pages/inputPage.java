@@ -1,14 +1,9 @@
 package students.TaylanTonka.lab01.pages;
 
 import code.utils.Driver;
-import io.cucumber.java.zh_cn.假如;
-import org.apache.poi.ss.formula.functions.T;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.*;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class inputPage {
@@ -37,6 +32,9 @@ public class inputPage {
     @FindBy(xpath = "(//div[@class='mat-step ng-tns-c38-2 ng-star-inserted'])[2]//span[@class='mat-button-toggle-label-content']")
     List<WebElement> financeDetails;
 
+    @FindBy(xpath = "(//div[@class='mat-step ng-tns-c38-2 ng-star-inserted'])[2]//button[@name='mat-button-toggle-group-0']")
+    List<WebElement> forVerifyFinanceDetails;
+
     @FindBy(xpath = "//input[@id='mat-input-0']")
     WebElement distance;
 
@@ -56,6 +54,12 @@ public class inputPage {
 
     @FindBy(xpath = "(//span[@class='mat-button-wrapper'])[17]")
     WebElement submit;
+
+    @FindBy(xpath = "(//h2)[2]")
+    WebElement financeHeader;
+    @FindBy(xpath = "(//h2)[7]")
+    static
+    WebElement LicenseHistoryHeader;
 
     public void selectYear(String year) throws InterruptedException {
         vehicle_year_button.click();
@@ -182,6 +186,68 @@ public class inputPage {
 
     public void submitForm() throws InterruptedException {
         Thread.sleep(200);
+        inputPage.selectLicenseHeader();
+        Thread.sleep(200);
         submit.click();
     }
+
+    public Boolean verifyFinanceSection(String financeDetail) throws InterruptedException {
+        financeHeader.click();
+        Thread.sleep(500);
+        Boolean isVerified = false;
+        int index = 0;
+        for (WebElement element:forVerifyFinanceDetails)
+        {
+
+            if (!element.getAttribute("aria-pressed").equalsIgnoreCase("true"))
+            {
+
+
+
+                index++;
+            }
+
+        }
+
+        /*for(int i=0;i<forVerifyFinanceDetails.size();i++)
+        {
+            if(i !=index)
+            {
+               forVerifyFinanceDetails.get(i).click();
+
+
+               Thread.sleep(500);
+               if(forVerifyFinanceDetails.get(index).getAttribute("aria-pressed").equalsIgnoreCase("false"))
+               {
+
+                   isVerified= true;
+               }
+
+            }
+
+        }*/
+
+        int toSelect=0;
+        if(toSelect==index)
+        {
+            toSelect++;
+        }
+        else
+        {
+            forVerifyFinanceDetails.get(toSelect).click();
+            Thread.sleep(2000);
+            if(forVerifyFinanceDetails.get(index).getAttribute("aria-pressed").equalsIgnoreCase("false"))
+            {
+                isVerified=true;
+            }
+        }
+
+        return isVerified;
+    }
+
+    public static void selectLicenseHeader()
+    {
+        LicenseHistoryHeader.click();
+    }
+
 }
