@@ -4,8 +4,10 @@ import code.utils.Driver;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.junit.Assert;
 import students.TaylanTonka.lab01.pages.homePage;
 import students.TaylanTonka.lab01.pages.inputPage;
+import students.TaylanTonka.lab01.pages.reviewPage;
 
 import java.util.Map;
 
@@ -25,17 +27,24 @@ public class stepDefinations {
     }
 
     @Then("The user fill the input fields")
-    public void the_user_fill_the_input_fields(Map<String,String> table) {
-        // Write code here that turns the phrase above into concrete actions
-        // For automatic transformation, change DataTable to one of
-        // E, List<E>, List<List<E>>, List<Map<K,V>>, Map<K,V> or
-        // Map<K, List<V>>. E,K,V must be a String, Integer, Float,
-        // Double, Byte, Short, Long, BigInteger or BigDecimal.
-        //
-        // For other transformations you can register a DataTableType.
-
+    public void the_user_fill_the_input_fields(Map<String,String> table) throws InterruptedException {
         ip.selectYear(table.get("Vehicle_Year"));
-
+        ip.selectMake(table.get("Make"));
+        ip.selectModel(table.get("Series"));
+        ip.clickNext();
+        ip.selectFinanceDetails(table.get("Finance_Details"));
+        ip.clickNext();
+        ip.inputDistance(table.get("Driving_Distance"));
+        ip.clickNext();
+        ip.inputDate(table.get("Coverage_Date"));
+        ip.clickNext();
+        ip.selectWinterTireQuestion(table.get("Winter_Tire"));
+        ip.selectAdvantage(table.get("TD_Advantage"));
+        ip.clickNext();
+        ip.enterLicenceNumber(table.get("Licence_Number"));
+        ip.clickNext();
+        ip.selectLicenceHistory(table.get("Foreign_Licence"));
+        ip.submitForm();
     }
 
     @Then("Verify that in finance detail you should be able to select only one option")
@@ -47,7 +56,8 @@ public class stepDefinations {
     @Then("Verify that when you complete application you should be able to see {string} button")
     public void verify_that_when_you_complete_application_you_should_be_able_to_see_button(String string) {
         // Write code here that turns the phrase above into concrete actions
-
+        reviewPage rp = new reviewPage();
+        Assert.assertEquals(rp.verifyMessage(),string);
     }
 
 }

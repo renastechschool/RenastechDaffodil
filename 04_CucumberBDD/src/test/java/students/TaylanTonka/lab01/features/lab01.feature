@@ -6,6 +6,8 @@ Feature: Visit Insurance application and get Quote
     When The user click the Get a Quote button
     Then The user fill the input fields
       |Vehicle_Year|1994|
+      |Make        |BMW |
+      |Series      |3 Series|
       |Finance_Details|Leased|
       |Driving_Distance|20000|
       |Coverage_Date|7/18/2022|
