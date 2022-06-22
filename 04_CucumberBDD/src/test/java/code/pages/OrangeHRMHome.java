@@ -25,6 +25,17 @@ public class OrangeHRMHome extends BrowserUtils {
     private WebElement saveButton;
     @FindBy(xpath = "//h1[.='Personal Details']")
     private WebElement personalDetailsHeader;
+    @FindBy(id = "chkLogin")
+    private  WebElement addLoginDetails;
+    @FindBy(id = "user_name")
+    private WebElement userName;
+    @FindBy(xpath = "//input[@name='user_password']")
+    private WebElement password;
+    @FindBy(id = "re_password")
+    private WebElement confirmPassword;
+    @FindBy(id = "status")
+    private WebElement statusDrowndown;
+
 
     public void verifyDashboardMessage(){
         Assert.assertEquals("Dashboard",dashboard.getText());
@@ -57,5 +68,25 @@ public class OrangeHRMHome extends BrowserUtils {
 
     public void setPersonalDetailsHeader(String expectedHeader) {
         Assert.assertEquals(expectedHeader,personalDetailsHeader.getText());
+    }
+
+    public void setAddLoginDetails() {
+        addLoginDetails.click();
+    }
+
+    public void setUserName(String username) {
+       userName.sendKeys(username);
+    }
+
+    public void setPassword(String passWord) {
+        password.sendKeys(passWord);
+    }
+
+    public void setConfirmPassword(String confirmpassword) {
+        confirmPassword.sendKeys(confirmpassword);
+    }
+
+    public void setStatusDrowndown(String statusdropndown) {
+       BrowserUtils.selectFromDropDown(statusDrowndown, statusdropndown );
     }
 }
