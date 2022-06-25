@@ -20,7 +20,7 @@ public class hooks {
     public void tearDown()
     {
 
-        //Driver.getDriver().close();
+        Driver.getDriver().close();
     }
 
 }
