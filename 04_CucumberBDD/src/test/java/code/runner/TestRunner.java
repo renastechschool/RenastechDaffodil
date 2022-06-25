@@ -10,9 +10,9 @@ import org.junit.runner.RunWith;
         //path from content root
         glue = "code/stepDefinitions", //this is to connect steps definitions with cucumber
         //path from source root
-        tags = "@ParatemerizedDashboard", //Without tags it will run everything that is present under feature files. When you put tags it will only
+        tags = "@TC300", //Without tags it will run everything that is present under feature files. When you put tags it will only
         //run tagged ones
-        dryRun = false //This will give you undefined steps directly without running existing steps in a scenario or feature file.
+        dryRun = true //This will give you undefined steps directly without running existing steps in a scenario or feature file.
 
 )
 public class TestRunner {
