@@ -2,6 +2,7 @@ package code.pages;
 
 import code.utils.BrowserUtils;
 import code.utils.Driver;
+import org.apache.log4j.Logger;
 import org.junit.Assert;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -11,6 +12,8 @@ public class OrangeHRMHome extends BrowserUtils {
     public OrangeHRMHome(){
         PageFactory.initElements(Driver.getDriver(),this);
     }
+    private static final Logger logger = Logger.getLogger(OrangeHRMHome.class);
+
     @FindBy(xpath = "//h1[.='Dashboard']")
     private WebElement dashboard;
     @FindBy(id = "menu_pim_viewPimModule")
@@ -47,6 +50,7 @@ public class OrangeHRMHome extends BrowserUtils {
     public void setPIM() {
      //  PIM.click(); //regular way of clicking
         BrowserUtils.clickWithWait(PIM);
+
     }
 
     public void setAddEmployee() {
@@ -56,14 +60,17 @@ public class OrangeHRMHome extends BrowserUtils {
 
     public void setFirstName(String str) {
         firstName.sendKeys(str);
+        logger.info(str+" is successfully entered");
     }
 
     public void setLastName(String last) {
         lastName.sendKeys(last);
+        logger.info(last+ " is successfully entered");
     }
 
     public void setSaveButton() {
         BrowserUtils.clickWithWait(saveButton);
+        logger.info("The information is successfully saved");
     }
 
     public void setPersonalDetailsHeader(String expectedHeader) {
@@ -88,5 +95,6 @@ public class OrangeHRMHome extends BrowserUtils {
 
     public void setStatusDrowndown(String statusdropndown) {
        BrowserUtils.selectFromDropDown(statusDrowndown, statusdropndown );
+        logger.info("The option is selected from dropdown successfully");
     }
 }

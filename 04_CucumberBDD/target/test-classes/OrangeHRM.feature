@@ -7,14 +7,14 @@ Feature: Functional testing on Orange HRM
     Then The user wants to click on Login button
     And The user wants to verify that browser landed on Dashboard
 
-   @dryRunTest @ParatemerizedDashboard
+   @dryRunTest @ParatemerizedDashboard @Smoke @Regression
   Scenario: Login to OrangeHRM with Parameterized message
     Given The user wants to go to Orange HRM Website
     When The user wants to enter username and password
     Then The user wants to click on Login button
     And The user wants to verify that browser landed on "Dashboard"
 
-  @Smoke @TC100
+  @Smoke @TC100 @Regression
   Scenario: Adding a new employee
     Given The user wants to go to Orange HRM Website
     When The user wants to enter username and password
@@ -44,7 +44,7 @@ Feature: Functional testing on Orange HRM
       Then The user wants to save the information
       Then The user should be able to see "Personal Details"
 
-      @TC300
+      @TC300 @Regression
       Scenario: Adding a new employee  - third way
         Given The user wants to go to Orange HRM Website
         When The user wants to enter username and password
