@@ -81,6 +81,7 @@ public class OrangeHRMSteps extends BrowserUtils {
     @Then("The user wants to save the information")
     public void the_user_wants_to_save_the_information() {
         orangeHRMHome.setSaveButton();
+
     }
 
     @Then("The user wants to add employee's first and last name as following List")
