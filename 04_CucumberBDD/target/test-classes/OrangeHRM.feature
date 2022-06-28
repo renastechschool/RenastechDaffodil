@@ -60,3 +60,27 @@ Feature: Functional testing on Orange HRM
         |Gulistan963 | glstn!@#     |Disabled |
         Then The user wants to save the information
         Then The user should be able to see "Personal Details"
+
+        @Scenario_Outline @Smoke @Regression
+        Scenario Outline: Adding new nationality to nationalities page
+          Given The user wants to go to Orange HRM Website
+          When The user wants to enter username and password
+          Then The user wants to click on Login button
+          And The user wants to verify that browser landed on Dashboard
+          And The user wants to go to Admin Page
+          Then The user wants to go to Nationalities section
+          Then The user wants to click on add new nationality
+          Then The user wants to add new nationalties as "<Nationalities>"
+          Then The user wants to verify that Nationality is added
+          #In the last step it will apply a different nationality in the each run
+
+          Examples:
+          |Nationalities|
+          |Aramaic      |
+          |Chilean      |
+          |Ecuador      |
+          |American     |
+          |Romannn      |
+          #This will run 5 times
+          #We can increase the number columns as many as we want. It will provide data for each scenario
+
