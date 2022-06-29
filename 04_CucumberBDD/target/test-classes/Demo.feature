@@ -6,7 +6,7 @@ Feature: Payment Gateway functional test
     When The user wants to buy elephant toy
     Then The user wants to enter payment information as
     #We are using key and value format in the scenario below. We will be using keys in order to call values. This is a map
-    |CNumber|4444443334433333|
+    |CNumber|44444433344333456433|
     |EMonth | 11             |
     |EYear  |2029            |
     |CVVCode| 778           |
