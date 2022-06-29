@@ -118,5 +118,19 @@ public class OrangeHRMSteps extends BrowserUtils {
         orangeHRMAdmin.setNationalityName(string);
         orangeHRMAdmin.setNationalitiesList(string);
     }
+    @Then("The user wants to add employee's first and last name")
+    public void the_user_wants_to_add_employee_s_first_and_last_name() {
+        orangeHRMHome.setAddEmployee();
+        orangeHRMHome.setFirstName("Eda");
+        orangeHRMHome.setLastName("Atar");
+    }
+    @Then("The user wants to add login information as {string} {string} {string}")
+    public void the_user_wants_to_add_login_information_as(String username, String password, String status) {
+        orangeHRMHome.setAddLoginDetails();
+        orangeHRMHome.setUserName(username);
+        orangeHRMHome.setPassword(password);
+        orangeHRMHome.setConfirmPassword(password);
+        orangeHRMHome.setStatusDrowndown(status);
+    }
 
 }
