@@ -22,7 +22,7 @@ public class Hooks extends BrowserUtils {
             scenario.attach(data, "image/png", scenario.getName());
         }
 
-        Driver.closeDriver();
+       // Driver.closeDriver();
 
 
     }
