@@ -12,7 +12,7 @@ import org.junit.runner.RunWith;
         //path from source root
         tags = "@TC_2", //Without tags it will run everything that is present under feature files. When you put tags it will only
         //run tagged ones
-        dryRun = true, //This will give you undefined steps directly without running existing steps in a scenario or feature file.
+        dryRun = false, //This will give you undefined steps directly without running existing steps in a scenario or feature file.
         plugin={
                 "pretty",
                 "html:target/default-cucumber-reports.html",

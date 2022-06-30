@@ -1,6 +1,6 @@
 Feature: Adding customer to the application
 
-  @TC_2
+  @TC_2 @Guru99Regression
   Scenario Outline: Verify that we can add customers http://demo.guru99.com/telecom/index.html
     Given The user wants to see Guru demo site
     When The user wants to add a customer
@@ -10,5 +10,6 @@ Feature: Adding customer to the application
     And The wants to verify message as "Access Details to Guru99 Telecom"
     Examples:
       |bCheck |fName |lName| email           |address     |pNumber  |
-      |Done   |Joe   |Dave |joedave@gmail.com|10 fake st  |123456789|
-      |Pending|Jason |Dave |jason@gmail.com  |11 fake st  |789654123|
+      |done   |Joe   |Dave |joedave@gmail.com|10 fake st      |123456789|
+      |pending|Jason |Dave |jason.gmail.com  |11 fake st      |789654123|
+      |done   |Ozgur |Atar |ozgur@gmail.com  |10 random street|123456789|

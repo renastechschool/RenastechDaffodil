@@ -3,7 +3,9 @@ package code.pages;
 import code.utils.BrowserUtils;
 import code.utils.Driver;
 import org.junit.Assert;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
@@ -37,6 +39,8 @@ public class guru99Home extends BrowserUtils {
 
     public void setAddCustomerButton() {
         addCustomerButton.click();
+        Actions actions = new Actions(Driver.getDriver());
+        actions.moveByOffset(0,0).click().build().perform();
     }
 
     public void setAddCustomerHeader(String addcustomerHeader) {
@@ -46,7 +50,9 @@ public class guru99Home extends BrowserUtils {
     public void setBackGroundCheck(String backgroundCheck) {
        for (WebElement each: backGroundCheck){
            if (each.getAttribute("id").equals(backgroundCheck)){
-               each.click();
+               //each.click(); This is the first way we can click on an element
+               JavascriptExecutor executor= (JavascriptExecutor) Driver.getDriver();
+               executor.executeScript("arguments[0].click();", each);
            }else{
                System.out.println("Please check the selection you provided");
            }
