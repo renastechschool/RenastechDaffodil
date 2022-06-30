@@ -62,6 +62,7 @@ Feature: Functional testing on Orange HRM
         Then The user should be able to see "Personal Details"
 
 
+        #Scenario outline is the place where we use DDT
         #We used the scenario above by converting it to scenario outline. The scenario outline below will run as many as row numbers in the chart
         @Scenario_Outline2
         Scenario Outline: Adding a new employee - using scenario outline
