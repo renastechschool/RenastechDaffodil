@@ -47,36 +47,38 @@ public class guru99Home extends BrowserUtils {
        for (WebElement each: backGroundCheck){
            if (each.getAttribute("id").equals(backgroundCheck)){
                each.click();
+           }else{
+               System.out.println("Please check the selection you provided");
            }
 
        }
     }
 
-    public void setFirstName(WebElement firstName) {
-        this.firstName = firstName;
+    public void setFirstName(String firstname) {
+        firstName.sendKeys(firstname);
     }
 
-    public void setLastName(WebElement lastName) {
-        this.lastName = lastName;
+    public void setLastName(String lastname) {
+       lastName.sendKeys(lastname);
     }
 
-    public void setEmail(WebElement email) {
-        this.email = email;
+    public void setEmail(String Email) {
+       email.sendKeys(Email);
     }
 
-    public void setAddress(WebElement address) {
-        this.address = address;
+    public void setAddress(String addresss) {
+      address.sendKeys(addresss);
     }
 
-    public void setMobileNumber(WebElement mobileNumber) {
-        this.mobileNumber = mobileNumber;
+    public void setMobileNumber(String mobilenumber) {
+        mobileNumber.sendKeys(mobilenumber);
     }
 
-    public void setSubmitButton(WebElement submitButton) {
-        this.submitButton = submitButton;
+    public void setSubmitButton() {
+       submitButton.click();
     }
 
-    public void setVerificationHeader(WebElement verificationHeader) {
-        this.verificationHeader = verificationHeader;
+    public WebElement setVerificationHeader() {
+        return verificationHeader;
     }
 }
