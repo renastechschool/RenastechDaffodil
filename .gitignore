@@ -16,4 +16,9 @@ production
 *.iml
 *.DS_Store
 03_SeleniumTestNG/target
+04_CucumberBDD/target
+*target
+.target
+
+
 
