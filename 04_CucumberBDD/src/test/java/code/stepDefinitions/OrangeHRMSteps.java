@@ -9,7 +9,13 @@ import code.utils.Driver;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.apache.poi.xssf.usermodel.XSSFRow;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.util.List;
 import java.util.Map;
 
@@ -131,6 +137,29 @@ public class OrangeHRMSteps extends BrowserUtils {
         orangeHRMHome.setPassword(password);
         orangeHRMHome.setConfirmPassword(password);
         orangeHRMHome.setStatusDrowndown(status);
+    }
+
+    @Given("The user wants to login OrangeHRM using Excel file")
+    public void the_user_wants_to_login_orange_hrm_using_excel_file() throws IOException {
+        Driver.getDriver().get(ConfigurationsReader.getProperties("OrangeHRMTest"));
+        String filePath="C:\\Users\\oralr\\IdeaProjects\\RenastechDaffodil\\04_CucumberBDD\\src\\test\\resources\\Book2.xlsx";
+        FileInputStream fileInputStream =new FileInputStream(filePath);//In order to load excel file we need this class
+        XSSFWorkbook workbook = new XSSFWorkbook(fileInputStream);//To open loaded excel file
+        XSSFSheet sheet = workbook.getSheet("Sheet1");//To open a specific sheet
+
+        int rows=sheet.getLastRowNum();//This will give us the last row number
+        int cols=sheet.getRow(0).getLastCellNum();
+
+
+        XSSFRow row=sheet.getRow(2);//Here we are on the second row
+        System.out.println(row.getCell(0));
+        System.out.println(row.getCell(1));
+
+        System.out.println("Total number of rows is "+rows);
+        System.out.println("Total number of columns is "+cols);
+
+        orangeHRMLogin.setDataFromExcel(row.getCell(0).toString(),row.getCell(1).toString());
+
     }
 
 }
