@@ -12,6 +12,7 @@ Feature: We are testing background keyword in this file
     Then The user wants to click on Login button
     And The user wants to verify that browser landed on Dashboard
 
+    @Regression
   Scenario:  User wants to add employee
     Then The user wants to click on PIM module
     And The user wants to go to Add Employee page
@@ -20,7 +21,7 @@ Feature: We are testing background keyword in this file
     Then The user wants to save personal information
     Then The user should be able to see "Personal Details"
 
-
+    @Regression
   Scenario: Adding a new employee - with background keyword
     Then The user wants to click on PIM module
     Then The user wants to add employee's first and last name as following List

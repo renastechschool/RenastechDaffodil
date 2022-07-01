@@ -2,7 +2,7 @@ package students.HaticeKarakoyun;
 
 import code.utilities.BrowserUtils;
 import code.utilities.WebDriverUtil;
-import com.sun.scenario.effect.impl.sw.sse.SSEBlend_SRC_OUTPeer;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterMethod;
