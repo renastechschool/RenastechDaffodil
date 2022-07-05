@@ -1,6 +1,6 @@
 Feature: Adding customer to the application
 
-  @TC_2
+  @TC_2 @Guru99Regression
   Scenario Outline: Verify that we can add customers http://demo.guru99.com/telecom/index.html
     Given The user wants to see Guru demo site
     When The user wants to add a customer
