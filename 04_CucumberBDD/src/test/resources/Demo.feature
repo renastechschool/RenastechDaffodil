@@ -13,7 +13,7 @@ Feature: Payment Gateway functional test
     Then The user wants to click on pay now
     And The user wants to verify messeage as "Payment successfull!"
     
-    @Smoke @BuyingMultiProducts
+    @Smoke @BuyingMultiProducts @Regression
   Scenario: Verify that user can buy multiple products
     Given The user wants to go to Payment Gateway Website
     When The user wants to buy elephant toys as "8"
