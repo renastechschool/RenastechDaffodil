@@ -70,6 +70,7 @@ public class lab10 {
     public void closingMethod() {
         BrowserUtils.wait(5);
         driver.close();
+        //close the browser
     }
 }
 
