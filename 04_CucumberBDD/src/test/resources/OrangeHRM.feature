@@ -1,6 +1,6 @@
 Feature: Functional testing on Orange HRM
 
- @Smoke
+ @Smoke @Maventest
   Scenario: Login to Orange HRM
     Given The user wants to go to Orange HRM Website
     When The user wants to enter username and password
