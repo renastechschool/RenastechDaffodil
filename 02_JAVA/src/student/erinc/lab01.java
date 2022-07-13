@@ -1,4 +1,4 @@
-package student.Murat.erinc;
+package student.erinc;
 
 import java.util.Scanner;
 

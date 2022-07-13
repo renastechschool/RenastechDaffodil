@@ -1,4 +1,4 @@
-package student.Murat.erinc;
+package student.erinc;
 
 public class lab04 {
     public static void main(String[] args) {

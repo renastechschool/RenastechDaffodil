@@ -1,4 +1,4 @@
-package student.Murat.erinc;
+package student.erinc;
 
 public class lab16 {
     //1. Write a return method that can verify if a password is valid or not.

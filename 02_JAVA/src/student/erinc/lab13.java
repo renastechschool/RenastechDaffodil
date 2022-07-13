@@ -1,4 +1,4 @@
-package student.Murat.erinc;
+package student.erinc;
 
 public class lab13 {
     //String -- Frequency of Characters

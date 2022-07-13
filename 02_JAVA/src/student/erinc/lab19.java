@@ -1,4 +1,4 @@
-package student.Murat.erinc;
+package student.erinc;
 
 public class lab19 {
     // //Write a return method that returns the  Fibonacci of any given number
