@@ -1,0 +1,26 @@
+my framework is a cucumber BDD and I am using a maven to build up my framework as a build management tool and for that, 
+1.	I have pom.xml and in “pom.xml” file where I am storing all my dependencies and plugins. That helps me maintain my framework 
+2.	Also, have a “.properties” file so in the properties file I keep my important data as browser, URL and credentials.
+And I have created configuration reader method in my Utils package that load them and reach them from anywhere in my framework
+
+My framework is consisting of different packages Pages, Runner, steps definitions, utils the resources 
+3.	Next is resources package and under resources I keep my feature files and other type of other external files,
+and this is basically where I keep all my scenarios and scenario outlines in Gherkin language, by using Gherkin language
+with “Given, When ,Then”… keywords in the feature file to make sure my test cases are understandable even who has not any technical background
+4.	 so, I have a utils package where I keep my useful utils to use throughout my framework. There are browser utils
+where I store useful methods when handling browsers. Also, configuration reader to read my data from my properties files
+and the third one is driver, this driver util is very capable driver and I can run my scenario parallelly using this driver
+ because I am using pull design instead of Singleton design.
+5.	the other package is called steps definitions I have two types of files I have a hooks class where I keep my
+@Before(launching my driver, implicitly  wait) and @After (screenshots, close driver)annotations or other JUnit annotations,
+next class “steps” and in there I am implementing and creating my methods for each step in my “feature.files”
+6.	Runner package so in this package I have 2 class runner class. Test runner basically running my scenarios.
+I am using “@RunWith” annotation to run them with Junit. Also,  in “@CucumberOptions” annotation
+I initialize my framework “feature” I give path to my resource files,  “glue” I give path to my definitions and
+“tags” where I can Define which tag scenarios will be  run, with “plugin” I can generate HTML reports Json reports
+as well as a file to keep my failed scenarios(in rerun.txt) .Also I have failedRunner  class under this package and
+store my failed scenarios and rerun those scenarios in this class and setup is as Test runner class
+7.	Last package is called pages in my framework I implement page object model design pattern to prevent code redundancy,
+ make the codes reusable and easy to maintain.so I have a page for each web page in my project. For example, I have a home page and login page.
+ Basically, on these pages I am locating elements and useful method in these classes. That I can use those methods in step definitions.
+  Basically, this is what all about my framework.

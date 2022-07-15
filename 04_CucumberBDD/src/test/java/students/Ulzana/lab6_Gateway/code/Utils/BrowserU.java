@@ -1,0 +1,20 @@
+package students.Ulzana.lab6_Gateway.code.Utils;
+
+import org.openqa.selenium.JavascriptExecutor;
+
+import java.util.concurrent.TimeUnit;
+
+public class BrowserU {
+
+
+    public static void impWait(int second){
+        DriverU.getDriver().manage().timeouts().implicitlyWait(second, TimeUnit.SECONDS);}
+    public static void javaWait(int second){try {Thread.sleep(1000*second);} catch (InterruptedException e){e.printStackTrace();}}
+
+    public static void scroll(long scroll){
+        JavascriptExecutor js=(JavascriptExecutor) DriverU.getDriver();
+        js.executeScript("window.scrollBy(0,"+scroll+")");
+    }
+
+}
+

@@ -1,0 +1,14 @@
+What is Page Object Model ?
+
+Page object model is a design pattern. We use page object model in our Selenium and Cucumber project.
+In my framework I use POM to design and maintain my framework. All the  web pages related to my project
+ as home page, login page and etc  needs to be saved separately under pages package. In this way all my WebElements
+ related to specific web page will be stored under page.class in page package. Page.class will identify the WebElements
+ of that web page and also contains Page methods which perform actions on those WebElements. To locate my WebElements and
+  use them we need to connect driver with object of this class, for that we use Page Factory initial in constructor.
+  Page Factory allows to use @Find By annotation  to locate our WebElements. WebElements in this class will be stored "private"
+  to be able to reach them from other package we use Java OOP concept Encapsulation getter and setter methods in this classes.
+With help of POM we store all the WebElements at pages.package. In this way we don't hard code. If u locate ur WebElement in different 10 testcases,
+and developer changes this WebElement locator, u need to change them in 10 testcases. It is time-consuming and wrong approach in automation testing.
+In this case if u use POM u will need to changes only once on pages and all related codes will be updated. POM helps make the code more readable, maintainable, and reusable.
+
