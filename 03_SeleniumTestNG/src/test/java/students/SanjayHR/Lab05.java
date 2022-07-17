@@ -33,7 +33,8 @@ public class Lab05 {
         driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
     }
     @AfterMethod
-    public void closeDriver(){
+    public void closeDriver() throws InterruptedException {
+        Thread.sleep(2000);
         driver.quit();
     }
 
