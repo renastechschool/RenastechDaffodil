@@ -1,6 +1,6 @@
 package student.Ulzana;
 
-public class lab19 {
+public class    lab19 {
 
     public static void main(String[] args) {
 

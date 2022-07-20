@@ -39,7 +39,7 @@ public class HomeWork2 {
 
         if(actualValue.contains(expectedValue))
         {
-            System.out.printf("Task 1 passed");
+            System.out.print("Task 1 passed");
         }
 
 
