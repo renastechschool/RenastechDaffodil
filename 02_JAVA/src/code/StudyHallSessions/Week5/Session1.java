@@ -35,10 +35,8 @@ public class Session1 {
         System.out.println("*************Prime Number****************");
         // Write a program that will check if the given number is a  prime number or not
 
-        // 5 , 8 => 1 2 4 8
-        // 6 =>  2 3  not
         // 13 => prime , 17 prime
-        // 22  2 11 -- not prime
+        // 22  -- not prime
 
         // 9 ==>  3 , 9 is not a prime
 
