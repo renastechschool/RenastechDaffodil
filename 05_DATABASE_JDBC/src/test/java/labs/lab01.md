@@ -1,4 +1,4 @@
-1. List all the employees' first and last name with their salary in employees table
+select1. List all the employees' first and last name with their salary in employees table
 2. how many employees have salary less than 5000?
 3. how many employees have salary between 6000 and 7000?
 4. List all the different region_ids in countries table
