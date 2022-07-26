@@ -1,0 +1,27 @@
+JDBC
+Java Database Connectivity
+- Comes with JDK, work with relational database system
+- it is under java.sql package => import java.sql.*;
+- it has set of Interfaces and classes to work with and RDMS
+
+"jdbc:oracle:thin:@ec2-54-159-174-62.compute-1.amazonaws.com:1521:XE"
+
+jdbc : connection using java
+oracle: database vendor :RDMS
+IP_ADDRESS -- HOSTNAME or IP
+1521 -- PORT USED FOR ORACLE DATABASE == POSTGRES 5322 MYSQL 3306
+XE -- sid number unique identifier for oracle db
+
+3 Important Interfaces in JDBC
+
+Connection
+Statement
+ResultSet
+
+
+getString(columnIndex)
+getString(ColumnName)
+
+getInt
+getDouble
+getDate
