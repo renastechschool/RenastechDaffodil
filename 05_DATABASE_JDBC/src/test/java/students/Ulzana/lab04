@@ -1,0 +1,57 @@
+
+--find the 3rd maximum salary from the employees table (do not include duplicates)
+SELECT DISTINCT(MAX(salary)) FROM employees
+WHERE salary < (SELECT MAX (salary)FROM employees
+WHERE salary < (SELECT MAX (salary)FROM employees);
+
+--find the 5th maximum salary from the employees table (do not include duplicates)
+SELECT MIN(salary) max_5th FROM (SELECT DISTINCT(salary) FROM employees
+ORDER BY salary DESC) WHERE rownum <=5;
+
+--find the 7th maximum salary from the employees table (do not include duplicates)
+SELECT MIN(salary) max_7th FROM (SELECT DISTINCT(salary) FROM employees
+ORDER BY salary DESC) WHERE rownum <=7;
+
+--find the 10th maximum salary from the employees table (do not include duplicates)
+SELECT MIN(salary) max_10th FROM (SELECT DISTINCT(salary) FROM employees
+ORDER BY salary DESC) WHERE rownum <=10;
+
+--find the 3rd minimum salary from the employees table (do not include duplicates)
+SELECT DISTINCT salary  FROM employees a
+    WHERE ( SELECT COUNT(DISTINCT salary) FROM employees b
+           WHERE a.salary >= b.salary) =3;
+
+--find the 5th minimum salary from the employees table (do not include duplicates)
+SELECT DISTINCT salary  FROM employees a
+    WHERE ( SELECT COUNT(DISTINCT salary) FROM employees b
+           WHERE a.salary >= b.salary) =5;
+
+--find the 7th maximum salary from the employees table (do not include duplicates)
+SELECT MIN(salary) max_7th FROM (SELECT DISTINCT(salary) FROM employees
+ORDER BY salary DESC) WHERE rownum <=7;
+
+--find the 10th maximum salary from the employees table (do not include duplicates)
+SELECT salary max_10th FROM employees a
+WHERE 9 = (SELECT  COUNT(DISTINCT b.salary)
+         FROM  employees b
+        WHERE   a.salary < b.salary)
+Group By salary;
+
+--find the 8th minimum salary from the employees table (do not include duplicates)
+SELECT DISTINCT salary as min_8th FROM employees a
+    WHERE ( SELECT COUNT(DISTINCT salary) FROM employees b
+           WHERE a.salary >= b.salary) =8;
+
+        MAX             MIN
+    1    24000          2100
+    2    17000          2200
+    3    14000          2400
+    4    13500          2500
+    5    13000          2600
+    6    12008          2700
+    7    12000          2800
+    8    11500          2900
+    9    11000          3000
+    10    10500         3100
+
+

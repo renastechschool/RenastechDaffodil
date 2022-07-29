@@ -1,0 +1,62 @@
+--Show all job_id and average salary who work as any of these jobs IT_PROG, SA_REP, FI_ACCOUNT, AD_VP
+SELECT job_id, AVG(salary) FROM employees
+WHERE job_id IN ('IT_PROG', 'SA_REP', 'FI_ACCOUNT', 'AD_VP')
+GROUP BY job_id;
+
+--Show all records whose last name contains 2 lowercase 'a's
+SELECT * FROM employees
+WHERE last_name LIKE '%a%a%';
+
+--Display max salary for each department
+SELECT department_id, MAX(salary) FROM employees
+GROUP BY department_id;
+
+--Display total salary for each department except department_id 50, and where total salary >30000
+SELECT department_id, SUM(salary) as java FROM employees
+WHERE NOT department_id= 50 and  NOT java>30000
+GROUP BY department_id;
+
+--Write a SQL query that returns first and last name any employees who started job
+--between 1-JAN-2000 and 3-SEP-2007 from the hr database
+SELECT first_name, last_name FROM employees
+where hire_date between '2001-01-01' and '2007-09-07';
+
+--Display country_id, country name, region id, region name from hr database
+SELECT c.country_id, c.country_name,r.region_id, r.region_name
+FROM countries c
+INNER JOIN regions r
+ON c.region_id=r.region_id;
+
+--Display All cities, country names from hr database
+SELECT l.city, c.country_id
+from locations l
+LEFT JOIN countries c
+ON l.country_id =c.country_id;
+
+--display the first name, last name, department number, and department name,
+--for all employees for departments 80 or 40.
+SELECT e.first_name, e.last_name, e.department_id, d.department_name
+FROM employees e
+LEFT JOIN departments d
+ON e.department_id=d.department_id
+WHERE e.department_id =80 or e.department_id=40;
+
+--Display employees' first name, Lastname department id and all departments
+--including  those where do not have any employee.
+SELECT e.first_name, e.last_name, d.department_id
+FROM employees e
+RIGHT JOIN departments d
+ON e.department_id=d.department_id;
+
+--Display the first name, last name, department number, and name,
+--for all employees who have or have not any department
+SELECT e.first_name, e.last_name, e.department_id, d.department_name
+FROM employees e
+FULL JOIN departments d
+ON e.department_id=d.department_id;
+
+--Display all employee, and their manager's names
+SELECT e.first_name, e.last_name, d.department_id, d.manager_id
+FROM employees e
+JOIN departments d
+ON e.department_id=d.department_id;
