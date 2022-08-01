@@ -3,7 +3,7 @@
     <test name="Smoke day 12">
         <classes>
             <class name="code.day12_POM_explicityWait.c1_smartBearPomExample"></class>
-            <class name="code.day12_POM_explicityWait.c2_Smart_Bear_Negative_Login"></class>
+            <class name="code.day12_POM_explicityWait. "></class>
             <class name="code.day12_POM_explicityWait.c3_ExplicitlyWait"></class>
         </classes>
     </test>
